@@ -1,5 +1,7 @@
 # DeTor
 
+A simple REST API to determine whether a request was made from TOR network or not.
+
 ## DeTor API call
 
 	GET http://detor.ambar.cloud/
