@@ -25,7 +25,7 @@ GET http://detor.ambar.cloud/
 
 ### The Simple One
 
-Use badge ![tor check](http://detor.ambar.cloud/badge)](https://github.com/RD17/DeTor) `<img src="http://detor.ambar.cloud/badge"/>`, or just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser.
+Use badge [![tor check](http://detor.ambar.cloud/badge)](https://github.com/RD17/DeTor) `<img src="http://detor.ambar.cloud/badge"/>`, or just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser.
 
 ### The Right One
 Image you have a web service running on `1.2.3.4` public IP address and `8080` port. You register an incoming request to your service from `2.3.4.5` IP address and want to check whether this request is made from TOR network or not.
