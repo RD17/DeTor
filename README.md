@@ -24,7 +24,7 @@ GET http://detor.ambar.cloud/
 ### The Simple One
 
 Just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser and look at the `found` field, it its value us `true` - you're using TOR.
-Also you can use our badge `<img src="http://detor.ambar.cloud/badge"/>` on your site.
+Also you can use our smart TOR-detecting badge `<img src="http://detor.ambar.cloud/badge"/>` on your site.
 
 ### The Right One
 Image you have a web service running on `1.2.3.4` public IP address and `8080` port. You register an incoming request to your service from `2.3.4.5` IP address and want to check whether this request is made from TOR network or not.
