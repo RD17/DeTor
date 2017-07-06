@@ -21,10 +21,34 @@ GET http://detor.ambar.cloud/
 
 ### Call Example
 
-Image you have a web service running on `1.2.3.4` public IP address and `8080` port. You register an incoming request to your service from `2.3.4.5` IP address and want to check whether this request is made from TOR net or not.
+## The Simple One
+Just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser
 
-In this case the call woudld be:
+## The Right One
+Image you have a web service running on `1.2.3.4` public IP address and `8080` port. You register an incoming request to your service from `2.3.4.5` IP address and want to check whether this request is made from TOR network or not.
 
+In this case the call woudld be
+
+CURL
+```
+curl -X GET 'http://detor.ambar.cloud/?sourceIp=2.3.4.5&destIp=1.2.3.4&destPort=8080'
+```
+
+Node.js
+```
+var request = require("request");
+
+var options = { method: 'GET',
+  url: 'http://detor.ambar.cloud/',
+  qs: { sourceIp: '2.3.4.5', destIp: '1.2.3.4', destPort: '8080' }
+  };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+```
 
 
 ### Success Response
@@ -33,10 +57,10 @@ HTTP/1.1 200
 
 ```
 {
-    "sourceIp": "127.0.0.1",
+    "sourceIp": "104.200.20.46",
     "destIp": "89.207.89.82",
     "destPort": "8080",
-    "found": false
+    "found": true
 }
 ```
 
