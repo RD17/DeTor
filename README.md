@@ -1,6 +1,6 @@
 # DeTor
 
-:speak_no_evil: A simple REST API to determine whether a request was made from TOR network or not.
+:speak_no_evil: A simple REST API to identify requests made from TOR network.
 
 DeTor uses [__TorDNSEL__](https://www.torproject.org/projects/tordnsel.html.en) inside, not the static list of TOR exit nodes.
 
