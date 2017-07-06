@@ -1,8 +1,10 @@
 # DeTor
 
-A simple REST API to determine whether a request was made from TOR network or not.
+[![tor check](http://detor.ambar.cloud/badge)](https://github.com/RD17/DeTor)
 
-DeTor uses __TorDNSEL__ inside, not the static list of TOR exit nodes.
+:speak_no_evil: A simple REST API to determine whether a request was made from TOR network or not.
+
+DeTor uses [__TorDNSEL__](https://www.torproject.org/projects/tordnsel.html.en) inside, not the static list of TOR exit nodes.
 
 
 ## DeTor API call
@@ -19,22 +21,25 @@ GET http://detor.ambar.cloud/
 | destIp| String, optional | <p>IP address the request was made to (e.g. your web server public IP)</p> | <p>Public IP address of DeTor API</p> |
 | destPort| String, optional | <p>Port number the request was made to (e.g. your web server public port)</p> | <p>80</p> |
 
-### Call Example
+## Call Example
 
-## The Simple One
-Just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser
+### The Simple One
 
-## The Right One
+Use badge [![tor check](http://detor.ambar.cloud/badge)](https://github.com/RD17/DeTor) 
+`http://detor.ambar.cloud/badge`
+or just open [http://detor.ambar.cloud/](http://detor.ambar.cloud/) in your browser
+
+### The Right One
 Image you have a web service running on `1.2.3.4` public IP address and `8080` port. You register an incoming request to your service from `2.3.4.5` IP address and want to check whether this request is made from TOR network or not.
 
-In this case the call woudld be
+In this case the call would be:
 
-CURL
+**CURL**
 ```
 curl -X GET 'http://detor.ambar.cloud/?sourceIp=2.3.4.5&destIp=1.2.3.4&destPort=8080'
 ```
 
-Node.js
+**Node.js**
 ```
 var request = require("request");
 
@@ -50,7 +55,7 @@ request(options, function (error, response, body) {
 });
 ```
 
-### Success Response
+#### Success Response
 
 HTTP/1.1 200 
 
@@ -73,7 +78,7 @@ Example:
 }
 ```
 
-### Error Response
+#### Error Response
 
 HTTP/1.1 500     
 
