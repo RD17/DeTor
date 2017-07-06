@@ -66,7 +66,7 @@ JSON object, fields:
 |sourceIp|String|`sourceIp` parameter value used for request|
 |destIp|String|`destIp` parameter value used for request|
 |destPort|String|`destPort` parameter value used for request|
-|found|Bool|The request was made from TOR network or not|
+|found|Bool|Request with specified parameters was made from TOR network or not|
 
 Example:
 ```
