@@ -50,11 +50,20 @@ request(options, function (error, response, body) {
 });
 ```
 
-
 ### Success Response
 
-HTTP/1.1 200    
+HTTP/1.1 200 
 
+JSON object, fields:
+
+| Name |Type |Description |
+|-----|-----|-----|
+|sourceIp|String|`sourceIp` parameter value used for request|
+|destIp|String|`destIp` parameter value used for request|
+|destPort|String|`destPort` parameter value used for request|
+|found|Bool|Value indicating whether specified parameters match TOR network|
+
+Example:
 ```
 {
     "sourceIp": "104.200.20.46",
@@ -68,6 +77,13 @@ HTTP/1.1 200
 
 HTTP/1.1 500     
 
+JSON object, fields:
+
+| Name |Type |Description |
+|-----|-----|-----|
+|error|String|Error description|
+
+Example:
 ```
 {
     "error": "Error: Source IP (256.10.10.10) is invalid"
