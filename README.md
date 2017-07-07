@@ -91,3 +91,8 @@ Example:
     "error": "Error: Source IP (256.10.10.10) is invalid"
 }
 ```
+
+## Running own instance
+
+Use Docker image:
+```docker pull rd17/detor```
