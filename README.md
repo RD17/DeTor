@@ -92,7 +92,7 @@ Example:
 }
 ```
 
-## Running own instance
+## Running Own Instance
 
 Use Docker image:
-```docker pull rd17/detor```
+```docker run -p 80:80 -e port=80 -d --name=detor rd17/detor```
