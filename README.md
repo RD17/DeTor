@@ -1,16 +1,12 @@
-![badge](http://detor.ambar.cloud/badge)
-
 # DeTor
 
 :speak_no_evil: A simple REST API to identify requests made from TOR network.
 
 DeTor uses [__TorDNSEL__](https://www.torproject.org/projects/tordnsel.html.en) inside, not the static list of TOR exit nodes.
 
+Article: [Identify Tor Requests On Your Site](http://sochix.ru/identify-tor-requests-on-your-site/)
 
 ## DeTor API call
-
-<a href="https://www.mashape.com/rd17/detor?&amp;utm_campaign=mashape5-embed&amp;utm_medium=button&amp;utm_source=detor&amp;utm_content=anchorlink&amp;utm_term=icon-light"><img src="https://d1g84eaw0qjo7s.cloudfront.net/images/badges/badge-icon-light-9e8eba63.png" width="143" height="38" alt="Mashape"></a>
-
 
 ```
 GET http://detor.ambar.cloud/
