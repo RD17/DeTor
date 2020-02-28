@@ -2,9 +2,7 @@
 
 :speak_no_evil: A simple REST API to identify requests made from TOR network.
 
-DeTor uses [__TorDNSEL__](https://www.torproject.org/projects/tordnsel.html.en) inside, not the static list of TOR exit nodes.
-
-Article: [Identify Tor Requests On Your Site](http://sochix.ru/identify-tor-requests-on-your-site/)
+DeTor uses [__TorDNSEL__](https://www.torproject.org/projects/tordnsel.html.en) inside, not a static list of TOR exit nodes.
 
 ## DeTor API call
 
@@ -93,7 +91,7 @@ Example:
 }
 ```
 
-## Running Own Instance
+## Running Your Own Instance
 
 Use Docker image:
 ```docker run -p 80:80 -e port=80 -d --name=detor rd17/detor```
