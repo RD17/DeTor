@@ -29,7 +29,7 @@
     "express": "^4.13.3",
     "ipaddr.js": "^1.4.0",
     "ipware": "^1.0.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "moment": "^2.18.1",
     "request": "^2.76.0",
     "request-promise-native": "^1.0.3",
